@@ -1,7 +1,7 @@
 
 import React, { useEffect, useState } from 'react';
-import ProductList from './components/ProductList';
-import { getProducts } from './components/Api';
+import ProductList from '../components/ProductList';
+import { getProducts } from '../components/Api';
 
 function ProductListPage() {
   const [products, setProducts] = useState([]);

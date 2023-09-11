@@ -9,10 +9,10 @@ function App() {
   return (
     <Routes>
      
-        <Route path="/" component={ProductListPage} />
-        <Route path="/product/:id" component={ProductDetailsPage} />
+        <Route exact path="/" element={<ProductListPage />} />
+        {/*<Route path="/product/:id" component={ProductDetailsPage} />
         <Route path="/cart" component={CartPage} />
-        <Route path="/checkout" component={CheckoutPage} />
+  <Route path="/checkout" component={CheckoutPage} />*/}
     
     </Routes>
   );
