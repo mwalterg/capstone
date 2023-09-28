@@ -1,5 +1,5 @@
 import React from 'react';
-import { useCart } from '../components/CartContext'; // Import the CartContext
+import { useCart } from '../components/CartContext';
 
 function CartPage() {
   const { cart } = useCart(); // Access the cart state from the CartContext

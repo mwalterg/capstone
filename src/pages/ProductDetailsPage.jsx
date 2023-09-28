@@ -1,9 +1,9 @@
-// ProductDetailsPage.jsx
+
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { getProductById } from '../components/Api';
 import { useCart } from '../components/CartContext';
-import { Link } from 'react-router-dom'; // Import Link
+import { Link } from 'react-router-dom';
 
 function ProductDetailsPage() {
   const { id } = useParams();
@@ -34,7 +34,7 @@ function ProductDetailsPage() {
         <p>Description: {product.description}</p>
         <img src={product.image} alt={product.title} />
         <button onClick={handleAddToCart}>Add to Cart</button>
-        <Link to="/cart">Go to Cart</Link> {/* Add the Link component here */}
+        <Link to="/cart">Go to Cart</Link>
       </div>
     </div>
   );
