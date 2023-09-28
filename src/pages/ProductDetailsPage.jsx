@@ -1,22 +1,29 @@
+// ProductDetailsPage.jsx
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { getProductById } from '../components/Api';
+import { useCart } from '../components/CartContext';
+import { Link } from 'react-router-dom'; // Import Link
 
 function ProductDetailsPage() {
-  const { id } = useParams(); 
+  const { id } = useParams();
   const [product, setProduct] = useState(null);
+  const { addToCart } = useCart();
 
   useEffect(() => {
-    // Fetch product details by ID
     getProductById(id)
-      .then(data => setProduct(data))
-      .catch(error => console.error(error));
-  }, [id]); 
+      .then((data) => setProduct(data))
+      .catch((error) => console.error(error));
+  }, [id]);
 
   if (!product) {
-    
     return <p>Loading...</p>;
   }
+
+  const handleAddToCart = () => {
+    addToCart(product);
+    alert('Item added to cart');
+  };
 
   return (
     <div>
@@ -26,6 +33,8 @@ function ProductDetailsPage() {
         <p>Price: ${product.price}</p>
         <p>Description: {product.description}</p>
         <img src={product.image} alt={product.title} />
+        <button onClick={handleAddToCart}>Add to Cart</button>
+        <Link to="/cart">Go to Cart</Link> {/* Add the Link component here */}
       </div>
     </div>
   );
