@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { getProductById } from '../components/Api';
-import { useCart } from '../CartContext'; // Import the CartContext
+import { useCart } from '../CartContext';
 
 function ProductDetailsPage() {
   const { id } = useParams();
   const [product, setProduct] = useState(null);
-  const { addToCart } = useCart(); // Access the addToCart function from the CartContext
+  const { addToCart } = useCart();
 
   useEffect(() => {
     // Fetch product details by ID

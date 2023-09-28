@@ -11,6 +11,9 @@ function Navbar() {
         <li>
           <Link to="/cart">Cart</Link>
         </li>
+        <li>
+          <Link to="/register">Register</Link>
+        </li>
       </ul>
     </nav>
   );
