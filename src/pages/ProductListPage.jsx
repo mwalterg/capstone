@@ -27,7 +27,6 @@ function ProductListPage() {
     ? products.filter((product) => product.category === selectedCategory)
     : products;
 
-  // Apply sorting if a sort option is selected
   if (selectedSort === 'price-asc') {
     filteredProducts = filteredProducts.sort((a, b) => a.price - b.price);
   } else if (selectedSort === 'price-desc') {

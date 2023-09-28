@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { loginUser } from '../components/Api'; // Import your login API function
+import { loginUser } from '../components/Api';
 
 function LoginForm() {
   const [formData, setFormData] = useState({
