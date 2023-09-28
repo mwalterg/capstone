@@ -25,7 +25,7 @@ function LoginForm() {
       .then((response) => {
     
         console.log('Login successful:', response);
-    
+        localStorage.setItem('token', response.token);
       })
       .catch((error) => {
         
