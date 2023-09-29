@@ -1,4 +1,4 @@
-Link to deployed website: https://6516113d6da52f0570ea40ac--nimble-fox-a44248.netlify.app
+Link to deployed website: https://nimble-fox-a44248.netlify.app
 
 Currently, two official plugins are available:
 
