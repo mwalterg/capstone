@@ -23,7 +23,7 @@ function CartPage() {
   };
 
   return (
-    <div>
+    <div classname="cart">
       <h2>Cart</h2>
       <ul>
         {cart.map((item) => (

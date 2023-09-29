@@ -26,7 +26,7 @@ function ProductDetailsPage() {
   };
 
   return (
-    <div>
+    <div className='product-details'>
       <h2>Product Details</h2>
       <div>
         <h3>{product.title}</h3>

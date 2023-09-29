@@ -7,6 +7,7 @@ import CartPage from './pages/CartPage';
 import RegistrationPage from './pages/RegistrationPage';
 import Navbar from './components/Navbar';
 import { CartProvider } from './components/CartContext';
+import './App.css'
 
 
 function App() {
